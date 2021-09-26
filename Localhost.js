@@ -5,13 +5,13 @@ window.onload = () => {
 };
 
 var input = document.getElementsByTagName("input");
-var login = document.getElementById("log-in");
+var register = document.getElementById("register");
 var form = document.querySelector("form");
 form.onsubmit = () => {
   return false;
 };
 
-login.onclick = () => {
+register.onclick = () => {
   if (input[0].value == "" && input[1].value != "") {
     if (
       input[0].value == sessionStorage.getItem("email") &&
